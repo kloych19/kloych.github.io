@@ -1,0 +1,303 @@
+/*Color Scheme*/
+:root {
+    --bgcolor:#A18276;
+    --txtcolor:white;
+    --secondary:#FBACBE;
+    --third:#F1D6B8;
+    --fourth:#B9D2B1;
+}
+body {
+    margin: 0;
+    background-color: var(--bgcolor);
+    color: var(--txtcolor);
+}
+
+
+/*Header*/
+header {
+    background-color: var(--fourth);
+}
+
+header nav ul li a {
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    background-color: var(--secondary);
+    flex-direction: row;
+}
+
+nav ul {
+    list-style: none;        
+    display: flex;           
+    justify-content: center; 
+    gap: 40px;               
+    padding: 20px;
+    margin: 20px;
+}
+
+header nav ul li {
+    color: var(--txtcolor);
+}
+
+header nav ul li a:visited {
+    text-decoration: none;
+    color: var(--txtcolor);
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: var(--txtcolor);
+    background-color: var(--third);
+}
+
+header nav ul li a:active {
+    text-decoration: none;
+    color: var(--txtcolor);
+    background-color: var(--secondary);
+}
+
+
+/*Footer*/
+footer {
+    background-color: var(--secondary);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: var(--txtcolor);
+}
+
+.about footer {
+    margin-top: 100px;
+}
+
+.location-link {
+    color: var(--txtcolor);
+}
+
+
+/*Index*/
+.index {
+  text-align: center;
+}
+
+.divider {
+  height: 2px;
+  background-color: var(--third);
+  margin: 15px 0;
+}
+
+.stack-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-box,
+.big-btn {
+  width: 800px;
+  height: 100px;
+  border: 2px solid var(--third);
+  border-radius: 12px;
+  gap: 20px;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--fourth);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+.side-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-left: 10px; 
+  margin-right: 10px;  
+}
+
+.row {
+  display: flex;
+  justify-content: center;      
+  gap: 40px;                    
+  align-items: center;
+  margin-top: 20px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+figure img {
+  width: auto;
+  height: 150px;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--txtcolor);
+}
+
+/*About*/
+.about .stack-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  height: 500px; 
+}
+
+.about-box {
+  background-color: var(--txtcolor);
+  color: var(--bgcolor);
+  width: 800px;
+  height: 150px;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-box h1,
+.about-box h2 {
+    margin-bottom: 5px; 
+}
+
+.bg-strip {
+  height: 200px; 
+  background-image: url('../media/images/Screenshot_15-4-2026_14830_www.shutterstock.com.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.about .left-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about .side-pic {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about .text-side {
+    max-width: 400px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/*Events*/
+.event {
+    margin-left: 20px;
+}
+
+.two-columns {
+    display: flex;
+    gap: 40px; 
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.pic-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.text-side {
+    font-size: 20px;
+    max-width: 320px;
+}
+
+.side-pic {
+    width: 350px; 
+    height: 250px;
+    border-radius: 10px;
+}
+
+
+/*Order Form*/
+.order { 
+    margin-left: 20px;
+}
+
+/*Thank You*/
+.thankyou {
+    background-image: url('../media/images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+    text-align: center;        
+    display: flex;
+    flex-direction: column;   
+    align-items: center;       
+    padding-top: 80px;
+    font-size: 22px
+}
+
+.thankyou input {
+    width: 175px;              
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.thankyou button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--fourth);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
